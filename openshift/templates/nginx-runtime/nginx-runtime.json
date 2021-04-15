@@ -37,7 +37,7 @@
           "type": "Docker",
           "dockerStrategy": {
             "pullSecret": {
-              "name": "artifactory-creds"
+              "name": "artifactory-pull"
             }
           }
         },
