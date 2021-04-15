@@ -1,5 +1,5 @@
 # Use the offical nginx (based on debian)
-FROM nginx:mainline
+FROM docker-remote.artifacts.developer.gov.bc.ca/nginx:mainline
 
 # Required for HTTP Basic feature
 RUN apt-get update && apt-get install openssl

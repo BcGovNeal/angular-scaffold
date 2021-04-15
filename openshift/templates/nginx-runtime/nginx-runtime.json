@@ -34,7 +34,12 @@
           "contextDir": "${SOURCE_CONTEXT_DIR}"
         },
         "strategy": {
-          "type": "Docker"
+          "type": "Docker",
+          "dockerStrategy": {
+            "pullSecret": {
+              "name": "artifactory-creds"
+            }
+          }
         },
         "output": {
           "to": {
