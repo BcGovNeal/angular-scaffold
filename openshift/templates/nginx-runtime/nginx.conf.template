@@ -101,7 +101,7 @@ http {
         # Serve dynamic configuration information such as feature flags, api endpoints, etc
         # from this apps location:  <http:// | https://><domain>/config
         location /api/config {
-          proxy_pass $config_endpoint;
+          proxy_pass %CONFIG_ENDPOINT%;
 
           # Ensure HTTP get passed thru
           proxy_pass_request_headers on;
